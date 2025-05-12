@@ -1,0 +1,23 @@
+.loadingScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+.name{
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*once the page loaded hide loading screen*/
+body.loaded .loadingScreen{
+    display: none;
+}
