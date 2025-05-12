@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
 .loadingScreen{
     display: flex;
     justify-content: center;
@@ -12,9 +13,12 @@
 }
 
 .name{
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*once the page loaded hide loading screen*/
