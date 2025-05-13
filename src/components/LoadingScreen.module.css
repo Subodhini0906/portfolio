@@ -10,19 +10,30 @@
     bottom: 0;
     background-color: white;
     z-index: 9999;
+    overflow: hidden;
 }
 
+.nameWrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
 .name {
+    margin-bottom: 1rem;
     font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
     font-family: "Underdog", system-ui;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
 }
 
 
-/*once the page loaded hide loading screen*/
-body.loaded .loadingScreen{
-    display: none;
-}
+.loader {
+    position: absolute;
+    bottom: 4rem;
+    right: 7rem;
+    font-size: 4rem;
+    color: #000;
+    font-family: "Underdog", system-ui;
+  }
