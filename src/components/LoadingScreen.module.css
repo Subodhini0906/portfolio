@@ -13,13 +13,14 @@
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
     font-family: "Underdog", system-ui;
     font-weight: 400;
     font-style: normal;
 }
+
 
 /*once the page loaded hide loading screen*/
 body.loaded .loadingScreen{
