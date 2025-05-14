@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
+import Hero from "@/components/Hero";
 import LoadingScreen from "@/components/LoadingScreen";
 import "./globals.css";
 
@@ -17,8 +18,7 @@ const Home = () => {
       {loading ? (
         <LoadingScreen />
       ) : (
-        <div>
-        </div>
+          <Hero/>
       )}
     </>
   );
