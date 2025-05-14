@@ -47,7 +47,7 @@ const LoadingScreen=()=>{
     if(!loader) return null;
     return(
         <div ref={screenRef} className={styles.LoadingScreen}>
-            <h1 ref={nameRef} className={styles.name}>Subodhini 💻  </h1>
+            <h1 ref={nameRef} className={styles.name}>Subodhini 💻</h1>
             <div className={styles.loader}>{progress}%</div>
         </div>
     );
