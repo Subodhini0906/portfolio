@@ -17,6 +17,9 @@ export default function Hero(){
                     <motion.a href="#projects" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
                         PROJECTS
                     </motion.a>
+                    <motion.a href="#contact" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
+                        CONTACT
+                    </motion.a>
                 </div>
                 <motion.button className="px-4 py-2 border border-white rounded-full text-sm hover:bg-white hover:text-black transition duration-300" whileHover={{scale:1.05}}>
                     AVAILABLE FOR FREELANCE & JOBS
