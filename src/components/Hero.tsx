@@ -32,10 +32,8 @@ export default function Hero(){
             <div className="flex flex-1 items-center justify-center px-6 md:px-12 max-w-7xl mx-auto w-full">
                 <div className="grid md:grid-cols-2 w-full gap-8 items-center">
                 <motion.h1 initial={{y:40,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}}
-                className="text-white text-[8vw] leading-none uppercase font-[700] tracking-tight">
-                    MULTI-<br/>
-                    DISCIPLINARY<br/>
-                    DESIGNER
+                className="text-white text-[6vw] leading-none uppercase font-[700] tracking-tight">
+                    Smart design,<br/>seamless<br/> code<br/>
                 </motion.h1>
                 </div>
             </div>
