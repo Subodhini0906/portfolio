@@ -4,7 +4,11 @@ import {motion} from "framer-motion";
 
 export default function Hero(){
     return (
-        <div className="w-full h-screen bg-black text-white flex flex-col justify-between px-8 py-6 font-sans">
+    <motion.div
+      initial={{ y: -200, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="w-full h-screen bg-black text-white flex flex-col justify-between px-8 py-6 font-sans">
             <div className="flex justify-between items-center">
                 <h1 className="text-xl font-light tracking-widest">SUBODHINI</h1>
                 <div className="flex gap-8">
@@ -25,6 +29,6 @@ export default function Hero(){
                     AVAILABLE FOR FREELANCE & JOBS
                 </motion.button>
             </div>
-        </div>
+    </motion.div>
     )
 }
