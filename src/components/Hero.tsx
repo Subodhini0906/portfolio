@@ -32,9 +32,20 @@ export default function Hero(){
             <div className="flex flex-1 items-center justify-center px-6 md:px-12 max-w-7xl mx-auto w-full">
                 <div className="grid md:grid-cols-2 w-full gap-8 items-center">
                 <motion.h1 initial={{y:40,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}}
-                className="text-white text-[6vw] leading-none uppercase font-[700] tracking-tight">
-                    Smart design,<br/>seamless<br/> code<br/>
+                className="text-white text-[6vw] md:text-[4.5w] leading-none uppercase font-[700] tracking-tight">
+                    Smart design,
+                    <br/>
+                    seamless
+                    <br/> 
+                    code
                 </motion.h1>
+                <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.8}}
+                className="text-xs leading-relaxed tracking-wider text-right max-w-sm ml-auto">
+                    <p>
+                    Creative thinking and problem solving are where my mind wanders,
+                    using my knowledge and passion for design as my medium.
+                    </p>
+                </motion.div>
                 </div>
             </div>
     </motion.div>
