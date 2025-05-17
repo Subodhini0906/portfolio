@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import {motion} from "framer-motion";
+import ScrollDownArrow from "./ScrollDownArrow";
 
 export default function Hero(){
     return (
@@ -38,6 +39,7 @@ export default function Hero(){
                     <br/> 
                     code
                 </motion.h1>
+                <ScrollDownArrow/>
                 </div>
     </motion.div>
     )
