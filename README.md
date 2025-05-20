@@ -30,13 +30,3 @@ This is a modern developer portfolio built with **Next.js**, **Framer Motion**, 
 ```bash
 git clone https://github.com/yourusername/your-portfolio.git
 cd your-portfolio
-4. **Install dependencies**:
-   ```bash
-   npm install
-6. **Run the development server**
-   ```bash
-   npm run dev
-8. **Open the application in your browser**
-   ```bash
-   http://localhost:3000
-
