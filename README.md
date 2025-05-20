@@ -25,8 +25,21 @@ This is a modern developer portfolio built with **Next.js**, **Framer Motion**, 
 
 ## 🛠️ Getting Started
 
-### 1. Clone the repository
+1. **Clone the repository**
 
-```bash
-git clone https://github.com/yourusername/your-portfolio.git
-cd your-portfolio
+   First, clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/subodhini0906-portfolio.git
+2. **Navigate into the project folder**
+   ```bash
+   cd subodhini0906-website
+4. **Install dependencies**:
+   ```bash
+   npm install
+6. **Run the development server**
+   ```bash
+   npm run dev
+8. **Open the application in your browser**
+   ```bash
+   http://localhost:3000
