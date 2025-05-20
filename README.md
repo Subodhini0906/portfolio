@@ -1,5 +1,3 @@
-**Portfolio**
-
 # 🧑‍💻 Personal Portfolio
 
 This is a modern developer portfolio built with **Next.js**, **Framer Motion**, and **Tailwind CSS**. It showcases projects, skills, contact information, and animations for a smooth user experience.
@@ -32,3 +30,11 @@ This is a modern developer portfolio built with **Next.js**, **Framer Motion**, 
 ```bash
 git clone https://github.com/yourusername/your-portfolio.git
 cd your-portfolio
+
+### 2.Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+
