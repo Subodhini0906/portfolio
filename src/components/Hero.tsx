@@ -13,7 +13,7 @@ export default function Hero(){
             <div className="flex justify-between items-center">
                 <h1 className="text-xl font-light tracking-widest">SUBODHINI</h1>
                 <div className="flex gap-8">
-                    <motion.a href="/About" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
+                    <motion.a href="#About" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
                         ABOUT
                     </motion.a>
                     <motion.a href="#skills" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
