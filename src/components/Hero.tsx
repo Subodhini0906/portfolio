@@ -3,7 +3,14 @@ import React from "react";
 import {motion} from "framer-motion";
 import ScrollDownArrow from "./ScrollDownArrow";
 
-export default function Hero(){
+export default function Hero() {
+    const scrollToAbout = () => {
+        document.getElementById('about')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
+
     return (
     <motion.div
       initial={{ y: -200, opacity: 0 }}
@@ -13,9 +20,13 @@ export default function Hero(){
             <div className="flex justify-between items-center">
                 <h1 className="text-xl font-light tracking-widest">SUBODHINI</h1>
                 <div className="flex gap-8">
-                    <motion.a href="#About" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
-                        ABOUT
-                    </motion.a>
+                <motion.button 
+                            onClick={scrollToAbout}
+                            className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" 
+                            whileHover={{scale:1.05}}
+                        >
+                            ABOUT
+                            </motion.button>
                     <motion.a href="#skills" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
                         SKILLS
                     </motion.a>

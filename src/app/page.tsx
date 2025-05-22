@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Hero from "@/components/Hero";
 import LoadingScreen from "@/components/LoadingScreen";
 import "./globals.css";
-import About from "@/sections/About";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -21,7 +20,7 @@ const Home = () => {
       ) : (
           <>
           <Hero />
-          <About />
+          
           </>
       )}
     </>
