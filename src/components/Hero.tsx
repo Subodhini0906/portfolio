@@ -7,51 +7,84 @@ export default function Hero() {
     const scrollToAbout = () => {
         document.getElementById('about')?.scrollIntoView({
             behavior: 'smooth',
-            block: 'start'
+            block: 'start',
         });
     };
 
     return (
-    <motion.div
-      initial={{ y: -200, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="w-full h-screen bg-black text-white flex flex-col justify-between px-8 py-6 font-sans">
-            <div className="flex justify-between items-center">
-                <h1 className="text-xl font-light tracking-widest">SUBODHINI</h1>
-                <div className="flex gap-8">
-                <motion.button 
+        <div className="bg-black text-white relative">
+            {/* Header - Fixed at top with high z-index */}
+            <div className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+                <div className="w-full flex justify-between items-center px-8 py-4">
+                    <motion.h1 
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-xl font-light tracking-widest text-white"
+                    >
+                        SUBODHINI
+                    </motion.h1>
+                    
+                    {/* Desktop Navigation */}
+                    <motion.div 
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="hidden md:flex gap-4"
+                    >
+                        <button 
                             onClick={scrollToAbout}
                             className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" 
-                            whileHover={{scale:1.05}}
                         >
                             ABOUT
-                            </motion.button>
-                    <motion.a href="#skills" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
-                        SKILLS
-                    </motion.a>
-                    <motion.a href="#projects" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
-                        PROJECTS
-                    </motion.a>
-                    <motion.a href="#contact" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm" whileHover={{scale:1.05}}>
-                        CONTACT
-                    </motion.a>
+                        </button>
+                        <a href="#skills" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm">
+                            SKILLS
+                        </a>
+                        <a href="#projects" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm">
+                            PROJECTS
+                        </a>
+                        <a href="#contact" className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition duration-300 text-sm">
+                            CONTACT
+                        </a>
+                    </motion.div>
+
+                    <motion.button 
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        className="hidden lg:block px-4 py-2 border border-white rounded-full text-xs hover:bg-white hover:text-black transition duration-300"
+                    >
+                        AVAILABLE FOR FREELANCE
+                    </motion.button>
+
                 </div>
-                <motion.button className="px-4 py-2 border border-white rounded-full text-sm hover:bg-white hover:text-black transition duration-300" whileHover={{scale:1.05}}>
-                    AVAILABLE FOR FREELANCE & JOBS
-                </motion.button>
             </div>
-            <div className="flex flex-1 flex-col items-center justify-center text-center px-4">
-                <motion.h1 initial={{y:40,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}}
-                className="text-white text-[6vw] md:text-[5vw] leading-[1.1] uppercase font-[700] tracking-tight text-left">
+
+            {/* Main Content - Full height with proper spacing */}
+            <div className="h-screen flex flex-col items-center justify-center text-center px-4 relative">
+                <motion.h1 
+                    initial={{y: 40, opacity: 0}} 
+                    animate={{y: 0, opacity: 1}} 
+                    transition={{duration: 1, delay: 0.6}}
+                    className="text-white text-[6vw] md:text-[5vw] lg:text-[4vw] leading-[1.1] uppercase font-bold tracking-tight z-20"
+                >
                     Smart design,
                     <br/>
                     seamless
                     <br/> 
                     code
                 </motion.h1>
-                <ScrollDownArrow/>
-                </div>
-    </motion.div>
+                
+            <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 1.2 }}
+                    className="absolute bottom-20"
+                >
+                    <ScrollDownArrow/>
+                </motion.div>
+            </div>
+        </div>
     )
 }

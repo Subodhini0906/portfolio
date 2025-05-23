@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Hero from "@/components/Hero";
 import LoadingScreen from "@/components/LoadingScreen";
 import "./globals.css";
+import About from "@/sections/About";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -18,10 +19,10 @@ const Home = () => {
       {loading ? (
         <LoadingScreen />
       ) : (
-          <>
-          <Hero />
-          
-          </>
+      <main className="w-full min-h-screen bg-black text-white">
+        <Hero />
+        <About />
+      </main>
       )}
     </>
   );
