@@ -13,7 +13,7 @@ export default function About() {
   className="scroll-mt-32 pt-60 w-full min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-20"
 >
 
-      <h2 className="text-4xl font-bold mb-6 text-center">About Me</h2>
+      <h2 className="text-4xl pt-20 font-bold mb-6 text-center">About Me</h2>
       <p className="text-lg max-w-3xl text-center leading-8 text-gray-300">
         I’m a passionate developer who blends smart design with seamless code.
         With a strong eye for detail and a love for clean UI, I build web

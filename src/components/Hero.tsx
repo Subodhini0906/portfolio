@@ -61,13 +61,12 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Main Content - Full height with proper spacing */}
-            <div className="h-screen flex flex-col items-center justify-center text-center px-4 relative">
+            <div className="h-screen flex flex-col items-center justify-center text-center px-4 pt-150 relative">
                 <motion.h1 
                     initial={{y: 40, opacity: 0}} 
                     animate={{y: 0, opacity: 1}} 
                     transition={{duration: 1, delay: 0.6}}
-                    className="text-white text-[6vw] md:text-[5vw] lg:text-[4vw] leading-[1.1] uppercase font-bold tracking-tight z-20"
+                    className="text-white text-[6vw] md:text-[5vw] lg:text-[4vw] leading-[1.1] uppercase font-bold tracking-tight z-50"
                 >
                     Smart design,
                     <br/>
@@ -80,7 +79,7 @@ export default function Hero() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 1.2 }}
-                    className="absolute bottom-20"
+                    className="absolute bottom-40"
                 >
                     <ScrollDownArrow/>
                 </motion.div>
