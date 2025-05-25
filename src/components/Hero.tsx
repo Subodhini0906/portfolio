@@ -37,7 +37,9 @@ export default function HomePage() {
           AVAILABLE FOR FREELANCE
         </motion.button>
       </div>
-
+      <div className="flex flex-col justify-center items-center text-center h-screen mt-50 px-6 pt-[150px]">
+        <h1 className="text-[7vw] leading-tight font-extrabold tracking-tight"></h1>
+      </div>
       
       <ScrollDownArrow/>
     </div>
