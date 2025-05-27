@@ -22,7 +22,10 @@ export default function HomePage() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="hidden md:flex space-x-4 text-sm"
         >
-          <button className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">ABOUT</button>
+          <button onClick={() => {
+    const aboutSection = document.getElementById('about');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  }} className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">ABOUT</button>
           <button className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">SKILLS</button>
           <button className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">PROJECTS</button>
           <button className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">CONTACT</button>
