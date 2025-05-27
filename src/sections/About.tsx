@@ -10,7 +10,7 @@ export default function About() {
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
   viewport={{ once: true }}
-  className="scroll-mt-32 pt-60 w-full min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-20"
+  className="scroll-mt-20 pt-60 w-full min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-20"
 >
 
       <h2 className="text-4xl pt-20 font-bold mb-6 text-center">About Me</h2>

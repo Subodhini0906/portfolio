@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import ScrollDownArrow from './ScrollDownArrow';
-
 export default function HomePage() {
 
   return (
@@ -24,8 +23,16 @@ export default function HomePage() {
         >
           <button onClick={() => {
     const aboutSection = document.getElementById('about');
-    aboutSection?.scrollIntoView({ behavior: 'smooth' });
-  }} className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">ABOUT</button>
+    if (aboutSection) {
+      // Remove any overflow hidden that might interfere
+      document.body.style.overflow = 'auto';
+      
+      aboutSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start' 
+      });
+    }
+  }}  className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">ABOUT</button>
           <button className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">SKILLS</button>
           <button className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">PROJECTS</button>
           <button className="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-black transition">CONTACT</button>
