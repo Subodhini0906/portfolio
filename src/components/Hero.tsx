@@ -1,8 +1,42 @@
 import { motion } from 'framer-motion';
 import ScrollDownArrow from './ScrollDownArrow';
+import { useEffect, useState } from 'react';
 
-
+const devQuotes=[
+  {
+    main:"CRAFTING DIGITAL",
+    sub:"EXPERIENCES",
+    tagline: "Where code meets creativity"
+  },
+  {
+    main:"BUILDING THE",
+    sub:"FUTURE",
+    tagline:"One pixel at a time"
+  },
+  {
+    main:"CODE IS",
+    sub:"POETRY",
+    tagline:"Written in logic, felt in experience"
+  },
+  {
+    main:"TURNING IDEAS",
+    sub:"INTO REALITY",
+    tagline:"Through the power of code"
+  },
+  {
+    main:"CREATING DIGITAL",
+    sub:"MAGIC",
+    tagline:"Where imagination becomes interaction"
+  }
+]
 export default function HomePage() {
+  const[currentQuote,setCurrentQuote]=useState(0);   //track which code displayed
+
+  useEffect(()=>{
+    const interval=setInterval(()=>{
+      setCurrentQuote((prev)=>(prev+1)%devQuotes.length);  //quote rotation  
+    },4000);
+  })
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
       {/* Navbar */}
