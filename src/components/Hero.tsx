@@ -24,7 +24,6 @@ export default function HomePage() {
           <button onClick={() => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
-      // Remove any overflow hidden that might interfere
       document.body.style.overflow = 'auto';
       
       aboutSection.scrollIntoView({ 
