@@ -35,10 +35,29 @@ export default function HomePage() {
   useEffect(()=>{
     const interval=setInterval(()=>{
       setCurrentQuote((prev)=>(prev+1)%devQuotes.length);  //quote rotation  
-    },4000);
-  })
+    },3000);
+    return()=>clearInterval(interval);
+  },[]);
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
+      <div className='absolute inset-0'>
+        {[...Array(50)].map((_,i)=>(
+          <motion.div key={i} className='absolute w-1 h-1 bg-white opacity-20' initial={{
+            x:Math.random()*window.innerWidth,
+            y:Math.random()*window.innerHeight
+          }}
+          animate={{
+            y:[0,-100,0],
+            opacity:[0.2,0.5,0.2]
+          }}
+          transition={{
+            duration:Math.random()*3+2,
+            repeat:Infinity,
+            delay:Math.random()*2
+          }}
+        />
+        ))}
+      </div>
       {/* Navbar */}
       <div className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur border-b border-white/10">
         <motion.div
