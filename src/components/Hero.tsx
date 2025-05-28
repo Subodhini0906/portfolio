@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import ScrollDownArrow from './ScrollDownArrow';
 import { useEffect, useState } from 'react';
-
+import * as math from 'mathjs';
 const devQuotes=[
   {
     main:"CRAFTING DIGITAL",
@@ -40,23 +40,34 @@ export default function HomePage() {
   },[]);
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
-      <div className='absolute inset-0'>
-        {[...Array(50)].map((_,i)=>(
-          <motion.div key={i} className='absolute w-1 h-1 bg-white opacity-20' initial={{
-            x:Math.random()*window.innerWidth,
-            y:Math.random()*window.innerHeight
-          }}
-          animate={{
-            y:[0,-100,0],
-            opacity:[0.2,0.5,0.2]
-          }}
-          transition={{
-            duration:Math.random()*3+2,
-            repeat:Infinity,
-            delay:Math.random()*2
-          }}
-        />
-        ))}
+      <div className="absolute inset-0">
+        {[...Array(50)].map((_, i) => {
+          const angle = (i / 50) * 2 * math.pi;
+          const radius = math.random() * 200 + 100;
+          const centerX = typeof window !== 'undefined' ? window.innerWidth / 2 : 800;
+          const centerY = typeof window !== 'undefined' ? window.innerHeight / 2 : 400;
+          
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-1 h-1 bg-white opacity-20"
+              initial={{ 
+                x: centerX + math.cos(angle) * radius,
+                y: centerY + math.sin(angle) * radius
+              }}
+              animate={{ 
+                x: centerX + math.cos(angle + math.pi/4) * (radius + math.sin(Date.now() * 0.001) * 50),
+                y: centerY + math.sin(angle + math.pi/4) * (radius + math.cos(Date.now() * 0.001) * 50),
+                opacity: [0.2, 0.8, 0.2]
+              }}
+              transition={{
+                duration: math.abs(math.sin(i)) * 4 + 3,
+                repeat: Infinity,
+                delay: i * 0.1
+              }}
+            />
+          );
+        })}
       </div>
       {/* Navbar */}
       <div className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur border-b border-white/10">
