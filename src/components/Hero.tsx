@@ -119,18 +119,29 @@ export default function HomePage() {
     transition={{duration:0.8}} 
     className='fixed inset-0 flex items-center justify-center'
   >
-    <motion.h1
-      className="text-xl md:text-3xl lg:text-4xl xl:text-5xl leading-[0.9] font-extrabold tracking-tight text-center text-white"
-      initial={{ scale: 0.9 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
-    >
-      {devQuotes[currentQuote].main}
-      <br/>
-      <span className='bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent'>
-        {devQuotes[currentQuote].sub}
-      </span>
-    </motion.h1>
+    <div className="flex flex-col items-center justify-center text-center">
+      <motion.h1
+        className="text-xl md:text-3xl lg:text-4xl xl:text-5xl leading-[0.9] font-extrabold tracking-tight text-center text-white mb-6"
+        initial={{ scale: 0.9 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        {devQuotes[currentQuote].main}
+        <br/>
+        <span className='bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent'>
+          {devQuotes[currentQuote].sub}
+        </span>
+      </motion.h1>
+      
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="text-xl md:text-2xl text-gray-300 tracking-wide font-light max-w-2xl mx-auto"
+      >
+        {devQuotes[currentQuote].tagline}
+      </motion.p>
+    </div>
   </motion.div>
 </div>
       
