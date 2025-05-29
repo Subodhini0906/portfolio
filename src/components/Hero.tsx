@@ -137,14 +137,13 @@ export default function HomePage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className="text-xl md:text-2xl text-gray-300 tracking-wide font-light max-w-2xl mx-auto"
+        className="text-5px md:text-2xl text-gray-300 tracking-wide font-light max-w-2xl mx-auto"
       >
         {devQuotes[currentQuote].tagline}
       </motion.p>
     </div>
   </motion.div>
 </div>
-      
       <ScrollDownArrow/>
     </div>
     
