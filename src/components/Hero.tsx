@@ -40,9 +40,8 @@ export default function HomePage() {
   },[]);
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
-      {/* Animated background particles */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(30)].map((_, i) => {
+      <div className="absolute inset-0 pointer-events-none">     
+        {[...Array(30)].map((_, i) => {                                //animated bg particles 
           const angle = (i / 30) * 2 * math.pi;
           // eslint-disable-next-line @typescript-eslint/no-unused-vars
           const radius = 150 + (i % 3) * 100;
@@ -69,7 +68,6 @@ export default function HomePage() {
           );
         })}
       </div>
-      {/* Navbar */}
       <div className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur border-b border-white/10">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
@@ -141,11 +139,11 @@ export default function HomePage() {
       >
         {devQuotes[currentQuote].tagline}
       </motion.p>
-    </div>
+    </div>    
   </motion.div>
 </div>
-      <ScrollDownArrow/>
-    </div>
+<ScrollDownArrow/>
+</div>
     
   );
 }
