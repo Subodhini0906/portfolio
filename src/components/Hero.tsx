@@ -41,7 +41,7 @@ export default function HomePage() {
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">     
-        {[...Array(30)].map((_, i) => {                                //animated bg particles 
+       {[...Array(30)].map((_, i) => {                                //animated bg particles 
           const angle = (i / 30) * 2 * math.pi;
           // eslint-disable-next-line @typescript-eslint/no-unused-vars
           const radius = 150 + (i % 3) * 100;
@@ -141,6 +141,19 @@ export default function HomePage() {
       </motion.p>
     </div>    
   </motion.div>
+  <div className='fixed bottom-32 left-1/2 transform -translate-x-1/2 z-20'>
+  <div className='flex space-x-3 mb-16'>
+    {devQuotes.map((_,index)=>(
+      <motion.button key={index} onClick={()=>setCurrentQuote(index)}
+      className={`w-2 h-2 rounded-full transition-all duration-500 hover:scale-125`}
+      whileHover={{scale:1.25}} whileTap={{scale:0.9}} animate={{
+        background:index===currentQuote?'#ffffff':'#4b5563',
+        boxShadow: index===currentQuote?'0 0 20px rgba(255,255,255,0.3)':'0 0 0px rgba(255,255,255,0)'}}
+        transition={{duration:0.5}} aria-label={`Go to quote ${index+1}`}
+      />
+    ))}
+  </div>
+  </div>
 </div>
 <ScrollDownArrow/>
 </div>
