@@ -18,7 +18,6 @@ This is a modern developer portfolio built with **Next.js**, **Framer Motion**, 
 - ✨ Smooth page transitions and animations using Framer Motion
 - 🎨 Fully responsive design with Tailwind CSS
 - 🧩 Modular and reusable components
-- 🌓 Dark mode support *(optional)*
 - 📱 Mobile-friendly layout
 
 ---
