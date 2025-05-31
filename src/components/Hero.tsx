@@ -157,13 +157,23 @@ export default function HomePage() {
       </section>
 
       <section id="about" className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-20">
-        <div className="max-w-4xl text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">About Me</h2>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-            I&apos;m a passionate developer dedicated to building beautiful and performant digital experiences.
-            With a deep love for front-end development and design, I aim to merge creativity with logic to
-            bring ideas to life on the web.
+        <div className="max-w-6xl w-full flex flex-col md:flex-row items-center md:items-start gap-10">
+          <div className='flex-1 text-center'>
+          <h2 className="text-4xl md:text-4xl font-bold mb-6">About Me</h2>
+          <p className="text-lg md:text-xl mb-6 text-gray-300 leading-relaxed">
+          Hi! I&apos;m Subodhini, a Frontend Developer passionate about crafting clean, accessible, and high-performance web interfaces. I have worked on a range of projects from personal portfolios to production-grade applications.
           </p>
+          <p className="text-lg md:text-xl leading-relaxed text-gray-300">
+        I believe in <strong className="text-white">continuous learning</strong>, purposeful design, and the power of simplicity. I love turning complex ideas into elegant user experiences that work across all devices and platforms.
+      </p>
+      <a
+        href="/Subodhini-Resume.pdf"
+        download
+        className="inline-block mt-8 px-6 py-3 border border-white text-white hover:bg-white hover:text-black transition duration-300"
+      >
+        Download CV
+      </a>
+          </div>
         </div>
       </section>
     </main>

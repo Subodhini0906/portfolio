@@ -46,10 +46,12 @@ const LoadingScreen=()=>{
     }, [loader]);
     if(!loader) return null;
     return(
-        <div ref={screenRef} className={styles.LoadingScreen}>
-            <h1 ref={nameRef} className={styles.name}>Subodhini 💻</h1>
-            <div className={styles.loader}>{progress}%</div>
-        </div>
+        <div ref={screenRef} className={styles.loadingScreen}>
+    <div className={styles.nameWrapper}>
+      <h1 ref={nameRef} className={styles.name}>Subodhini 💻</h1>
+      <div className={styles.loader}>{progress}%</div>
+    </div>
+  </div>
     );
 };
 

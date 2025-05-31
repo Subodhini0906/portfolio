@@ -1,39 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
-.loadingScreen{
+.loadingScreen {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;  /* Stack name and loader */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: white;
+    background-color: rgb(22, 21, 21);
     z-index: 9999;
     overflow: hidden;
 }
 
 .nameWrapper {
-    position: relative;
-    display: inline-block;
     text-align: center;
 }
+
 .name {
     margin-bottom: 1rem;
+    color: #fcfafa;
     font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
     font-family: "Underdog", system-ui;
-    font-weight: bold;
     font-style: normal;
 }
 
-
 .loader {
     position: absolute;
-    bottom: 4rem;
-    right: 7rem;
+    bottom: 2rem;
+    right: 2rem;
     font-size: 4rem;
-    color: #000;
+    color: white;
     font-family: "Underdog", system-ui;
   }
