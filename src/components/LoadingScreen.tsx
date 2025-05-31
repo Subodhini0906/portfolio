@@ -18,7 +18,7 @@ const LoadingScreen=()=>{
                 {
                     opacity: 1,
                     y: 0,                // animate to normal position
-                    duration: 1.2,
+                    duration: 1,
                     ease: "power3.out"
                 }
             );

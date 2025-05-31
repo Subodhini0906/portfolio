@@ -159,7 +159,7 @@ export default function HomePage() {
       <section id="about" className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-20">
         <div className="max-w-6xl w-full flex flex-col md:flex-row items-center md:items-start gap-10">
           <div className='flex-1 text-center'>
-          <h2 className="text-4xl md:text-4xl font-bold mb-6">About Me</h2>
+          <h2 className="text-4xl font-bold mb-12 border-b-4 inline-block border-purple-500 pb-2">About Me</h2>
           <p className="text-lg md:text-xl mb-6 text-gray-300 leading-relaxed">
           Hi! I&apos;m Subodhini, a Frontend Developer passionate about crafting clean, accessible, and high-performance web interfaces. I have worked on a range of projects from personal portfolios to production-grade applications.
           </p>
@@ -176,6 +176,52 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section id="skills" className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-20">
+  <div className="max-w-6xl w-full text-center">
+    <h2 className="text-4xl font-bold mb-12 border-b-4 inline-block border-purple-500 pb-2">Skills</h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
+      {/* Languages */}
+      <div className="bg-zinc-900 p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300">
+        <div className="text-purple-400 text-3xl mb-4">💻</div>
+        <h3 className="text-xl font-semibold mb-4">Languages</h3>
+        <div className="flex flex-wrap justify-center gap-3 text-sm">
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">HTML</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">CSS</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">SCSS</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">JavaScript</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">TypeScript</span>
+        </div>
+      </div>
+
+      {/* Libraries & Frameworks */}
+      <div className="bg-zinc-900 p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300">
+        <div className="text-purple-400 text-3xl mb-4">📦</div>
+        <h3 className="text-xl font-semibold mb-4">Libraries & Frameworks</h3>
+        <div className="flex flex-wrap justify-center gap-3 text-sm">
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">React</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">React Native</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">Redux</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">Tailwind CSS</span>
+        </div>
+      </div>
+
+      {/* Tools & Platforms */}
+      <div className="bg-zinc-900 p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300">
+        <div className="text-purple-400 text-3xl mb-4">🛠️</div>
+        <h3 className="text-xl font-semibold mb-4">Tools & Platforms</h3>
+        <div className="flex flex-wrap justify-center gap-3 text-sm">
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">Git</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">GitHub</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">Firebase</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">Figma</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">Scrum</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
   );
 }
