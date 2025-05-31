@@ -188,7 +188,7 @@ export default function HomePage() {
         <div className="flex flex-wrap justify-center gap-3 text-sm">
           <span className="bg-zinc-800 px-4 py-1 rounded-full">HTML</span>
           <span className="bg-zinc-800 px-4 py-1 rounded-full">CSS</span>
-          <span className="bg-zinc-800 px-4 py-1 rounded-full">SCSS</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">Java</span>
           <span className="bg-zinc-800 px-4 py-1 rounded-full">JavaScript</span>
           <span className="bg-zinc-800 px-4 py-1 rounded-full">TypeScript</span>
         </div>
@@ -200,7 +200,7 @@ export default function HomePage() {
         <h3 className="text-xl font-semibold mb-4">Libraries & Frameworks</h3>
         <div className="flex flex-wrap justify-center gap-3 text-sm">
           <span className="bg-zinc-800 px-4 py-1 rounded-full">React</span>
-          <span className="bg-zinc-800 px-4 py-1 rounded-full">React Native</span>
+          <span className="bg-zinc-800 px-4 py-1 rounded-full">Next</span>
           <span className="bg-zinc-800 px-4 py-1 rounded-full">Redux</span>
           <span className="bg-zinc-800 px-4 py-1 rounded-full">Tailwind CSS</span>
         </div>
@@ -215,7 +215,6 @@ export default function HomePage() {
           <span className="bg-zinc-800 px-4 py-1 rounded-full">GitHub</span>
           <span className="bg-zinc-800 px-4 py-1 rounded-full">Firebase</span>
           <span className="bg-zinc-800 px-4 py-1 rounded-full">Figma</span>
-          <span className="bg-zinc-800 px-4 py-1 rounded-full">Scrum</span>
         </div>
       </div>
     </div>
