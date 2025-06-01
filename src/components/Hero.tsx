@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import ScrollDownArrow from './ScrollDownArrow';
 import { useEffect, useState } from 'react';
 import * as math from 'mathjs';
+import Projects from '@/sections/Projects';
 
 const devQuotes = [
   {
@@ -215,6 +216,7 @@ export default function HomePage() {
     </div>
   </div>
       </section>
+      <Projects/>
     </main>
   );
 }
