@@ -78,7 +78,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
-        {/* Background stars */}
+
         <div className="absolute inset-0 pointer-events-none">
           {[...Array(40)].map((_, i) => {
             const angle = (i / 30) * 2 * math.pi;
@@ -105,7 +105,6 @@ export default function HomePage() {
           })}
         </div>
 
-        {/* Carousel Text */}
         <div className="z-10 flex flex-col items-center justify-center">
           <motion.h1
             key={`title-${currentQuote}`}
@@ -132,7 +131,6 @@ export default function HomePage() {
           </motion.p>
         </div>
 
-        {/* Quote Indicators */}
         <div className="z-10 mt-10">
           <div className="flex space-x-3">
             {devQuotes.map((_, index) => (
@@ -181,7 +179,6 @@ export default function HomePage() {
     <h2 className="text-4xl font-bold mb-12 border-b-4 inline-block border-purple-500 pb-2">Skills</h2>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
-      {/* Languages */}
       <div className="bg-zinc-900 p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300">
         <div className="text-purple-400 text-3xl mb-4">💻</div>
         <h3 className="text-xl font-semibold mb-4">Languages</h3>
@@ -194,7 +191,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Libraries & Frameworks */}
       <div className="bg-zinc-900 p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300">
         <div className="text-purple-400 text-3xl mb-4">📦</div>
         <h3 className="text-xl font-semibold mb-4">Libraries & Frameworks</h3>
@@ -206,7 +202,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Tools & Platforms */}
       <div className="bg-zinc-900 p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300">
         <div className="text-purple-400 text-3xl mb-4">🛠️</div>
         <h3 className="text-xl font-semibold mb-4">Tools & Platforms</h3>
