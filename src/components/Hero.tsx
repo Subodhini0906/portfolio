@@ -3,6 +3,7 @@ import ScrollDownArrow from './ScrollDownArrow';
 import { useEffect, useState } from 'react';
 import * as math from 'mathjs';
 import Projects from '@/sections/Projects';
+import Contact from '@/sections/Contact';
 
 const devQuotes = [
   {
@@ -217,6 +218,7 @@ export default function HomePage() {
   </div>
       </section>
       <Projects/>
+      <Contact/>
     </main>
   );
 }
