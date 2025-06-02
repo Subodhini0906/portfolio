@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import { motion } from 'framer-motion';
 import ScrollDownArrow from './ScrollDownArrow';
 import { useEffect, useState } from 'react';
 import * as math from 'mathjs';
 import Projects from '@/sections/Projects';
 import Contact from '@/sections/Contact';
+import About from '@/sections/About';
 
 const devQuotes = [
   {
@@ -45,7 +47,7 @@ export default function HomePage() {
 
   return (
     <main className="bg-black text-white overflow-hidden">
-      {/* Navbar */}
+
       <div className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur border-b border-white/10">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
@@ -78,7 +80,6 @@ export default function HomePage() {
         </motion.button>
       </div>
 
-      {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
 
         <div className="absolute inset-0 pointer-events-none">
@@ -155,28 +156,9 @@ export default function HomePage() {
 
         <ScrollDownArrow />
       </section>
+      <About/>
 
-      <section id="about" className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-10">
-        <div className="max-w-6xl w-full flex flex-col md:flex-row items-center md:items-start gap-10">
-          <div className='flex-1 text-center'>
-          <h2 className="text-4xl font-bold mb-12 border-b-4 inline-block border-purple-500 pb-2">About Me</h2>
-          <p className="text-lg md:text-xl mb-6 text-gray-300 leading-relaxed">
-          Hi! I&apos;m Subodhini, a Frontend Developer passionate about crafting clean, accessible, and high-performance web interfaces. I have worked on a range of projects from personal portfolios to production-grade applications.
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed text-gray-300">
-        I believe in <strong className="text-white">continuous learning</strong>, purposeful design, and the power of simplicity. I love turning complex ideas into elegant user experiences that work across all devices and platforms.
-      </p>
-      <a
-        href="/Subodhini-Resume.pdf"
-        download
-        className="inline-block mt-8 px-6 py-3 border border-white text-white hover:bg-white hover:text-black transition duration-300"
-      >
-        Download CV
-      </a>
-          </div>
-        </div>
-      </section>
-      <section id="skills" className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-10">
+      <section id="skills" className=" bg-black text-white flex items-center justify-center px-6 py-15">
       <div className="max-w-6xl w-full text-center">
      <h2 className="text-4xl font-bold mb-12 border-b-4 inline-block border-purple-500 pb-2">Skills</h2>
 

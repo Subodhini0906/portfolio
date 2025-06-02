@@ -3,7 +3,7 @@ import {FaGithub,FaLinkedin} from 'react-icons/fa';
 import { IoMail } from 'react-icons/io5';
 const Contact=()=>{
     return(
-        <section id='contact' className='bg-black text-white py-24 px-6 text-center'>
+        <section id='contact' className='bg-black text-white py-15 px-6 text-center'>
             <div className='max-w-2xl mx-auto'>
                 <h2 className='text-4xl font-bold mb-4 border-b-4 border-purple-500 inline-block pb-2'>
                     Contact
@@ -26,8 +26,8 @@ const Contact=()=>{
             <a href='https://github.com/Subodhini0906' target='_blank' rel='noopener noreferrer'>
             <FaGithub className='hover:text-white transition'/>
             </a>
-            <a href="https://linkedin.com/in/subodhini-aggarwal-622a1b251" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="hover:text-white transition" />
+            <a href='https://www.linkedin.com/in/subodhini-aggarwal-622a1b251' target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className='hover:text-white transition' />
             </a>
             <a href="mailto:subodhiniaggarwal@gmail.com">
             <IoMail className="hover:text-white transition" />
